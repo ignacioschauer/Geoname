@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Countries Info</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+        <meta name="author" content="Ignacio Schauer">
+
+		<link rel="stylesheet" href="libs/css/style.css">
+		
+
+	</head>
+
+	<body>
+
+		<div id="preloader"></div>
+			
+		<div>
+
+			<table>
+
+				<tr>
+					<td>
+						API name  
+					</td>
+					<td>
+						API description 
+                    </td>
+                    <td>
+
+                    </td>
+				</tr>
+
+				<tr>
+					<td class= "alignLeft">
+                        1. Find Nearby Place Name
+					</td>
+					<td>
+						<label for="selLatNearbyPlace">Lat :</label>
+						<select id="selLatNearbyPlace">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+						</select>
+						<label class="labelRight" for="selLngNearbyPlace"> Lng :</label>
+						<select id="selLngNearbyPlace">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+						</select>                         
+					</td>
+                    <td>
+                        <button id="btnRun1">Submit</button>
+                    </td>
+				</tr>
+
+				<tr>
+					<td class= "alignLeft">
+						2. Time Zone 
+					</td>
+					<td>
+						<label for="selLatTimeZone">Lat :</label>
+						<select id="selLatTimeZone">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+						</select> 	
+						<label class="labelRight" for="selLngTimeZone"> Lng :</label>
+						<select id="selLngTimeZone">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+						</select>  					
+                    </td>
+                    <td>
+                        <button id="btnRun2">Submit</button>
+                    </td>
+				</tr>
+
+				<tr>
+					<td class= "alignLeft"> 
+                        3. Country Subdivision 
+					</td>
+					<td>
+						<label for="selLatCountrySubdivision">Lat :</label>
+						<select id="selLatCountrySubdivision">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+						</select> 
+						<label class="labelRight" for="selLngCountrySubdivision"> Lng :</label>
+						<select id="selLngCountrySubdivision">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+						</select> 
+                    </td>
+                    <td>
+                        <button id="btnRun3">Submit</button>
+                    </td>
+				</tr>
+
+				<tr>
+					<td colspan="3" id="results">
+						<ul style="list-style: none; padding-left: 0px;">
+							<li>RESULTS</li>	
+							<li id="txtNearbyPlace"></li>
+							<li id="txtTimeZone"></li>
+							<li id="txtCountrySubdivision"></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/jquery.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
